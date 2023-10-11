@@ -1,0 +1,130 @@
+/* mengimpor font dari google font */
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Indie+Flower&display=swap');
+/* setting up the body */
+body {
+  font-family: 'Caveat', cursive;
+  font-family: 'Indie Flower', cursive;  
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+  align-items: center;
+
+/* scrolling */
+  overflow-x: hidden;
+/* background */
+  background-image: url(asset/enc.jpg);
+  background-size: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  /* mengatur tata letak element menggunakan flexbox */
+  display: flex;
+  flex-direction: column;
+}
+  /* set the container style */
+.container {
+  /* set width of the container */
+  width: 91%;
+  max-width: 680px;
+  margin: 10px;
+  padding: 50px 0px 100px 0px;
+
+  /* mengatur tata letak element menggunakan flexbox */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* set the profile image */
+.img-container img {
+  width: 160px;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+/* set the title and description */
+.glow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+
+
+
+  /* warna text heading dan dekskripsi */
+  color: white;
+}
+
+/* set the link item elements */
+.link-item {
+  width: 100%;
+  height: 56px;
+  margin: 16px;
+  border-radius: 20px;
+
+  /* text color and background color */
+  color: white;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.500);
+
+  /* tata letak */
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+/* set the icons */
+.icon {
+  margin: 3px 8px;
+  width: 44px;
+  height: 44px;
+}
+.link-item {
+  margin-right: 60px;
+}
+
+/* apa yang terjadi jika mouse berada di atas element? itulah yang disebut sifat hover */
+.link-item:hover {
+  letter-spacing: 0.25em;
+  transition: cubic-bezier(.07, 1.41, .82, 1.41) 0.2s;
+  transform: scale(1.02);
+}
+
+.bottom {
+  color: #fff;
+}
+
+.glow {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ffbf00, 0 0 40px #ffbf00, 0 0 50px #ffbf00, 0 0 60px #ffbf00, 0 0 70px #ffbf00;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ffcf40, 0 0 40px #ffcf40, 0 0 50px #ffcf40, 0 0 60px #ffcf40, 0 0 70px #ffcf40, 0 0 80px #ffcf40;
+    }
+  }
+
+  ::-webkit-scrollbar {
+    width: 1px;
+  }
+
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    outline: 1px solid slategrey;
+  }
